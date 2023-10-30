@@ -1,9 +1,2 @@
-# Projeto_CRUD_DSW2
-Atualização da avaliação 2 em CRUD
-Memnbros do Grupo
-Carla Justino
-Fernando Saldanha
-Giovani Ortega
-Lucas Luiz Assis
-Vitor de  Carvalho
-Vitor Fellizatti
+# FATEC_DES_WEB2_2023_Avaliacao2
+avaliação 2
