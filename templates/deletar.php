@@ -14,7 +14,7 @@
         <label for="id">ID a ser deletado:</label>
         <input type="text" id="id_deletar" name="id_deletar"><br><br>
         <input type="submit" value="Deletar">
-        <a href="index.php" class="btn btn-primary">voltar</a>
+       <a href="index.php"><input type="button" value="voltar"></a>
     </form>
     </div>
     
