@@ -1,5 +1,12 @@
 # Projeto de Avaliação 2 - Implementação de CRUD em PHP
 
+Integrantes:
+Giovani Ruzzon de Jesus Ortega
+Vitor Cristiano Felizatti
+Carla Cristina Justino Pereira da Silva
+Fernando Augusto Saldanha
+Vitor de Carvalho
+
 Este projeto consiste na implementação de um CRUD (Create, Read, Update, Delete) em PHP, orientado a objetos, para as tabelas de veículos e registros conforme os requisitos da Avaliação 2 do curso.
 
 ## Funcionalidades Implementadas
