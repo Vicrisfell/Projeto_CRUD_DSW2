@@ -25,41 +25,31 @@ try {
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/estilo-relatorio.css">
     <title>Tabela de Dados</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        th, td {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
+   
 </head>
 <body>
 
-<h2>Dados</h2>
+<div class="wrapper">
+<div class="content-box">
+    <div class="left-box">
+<h2 class="page-text">Dados</h2>
 
 <table>
     <thead>
-        <tr>
-            <th>ID</th>
+        <tr class="left-box-text">
+            <th >ID</th>
             <th>Data e Hora</th>
             <th>ID do Veículo</th>
             <th>Aluno</th>
             <th>Placa</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody class="list-content">
         <?php foreach ($dados as $item): ?>
-            <tr>
+            <tr class="left-box-text">
                 <td><?php echo $item['id']; ?></td>
                 <td><?php echo $item['data_hora']; ?></td>
                 <td><?php echo $item['veiculos_id']; ?></td>
@@ -68,9 +58,16 @@ try {
             </tr>
         <?php endforeach; ?>
     </tbody>
-    <a href="login.php"><input type="button" value="voltar"></a>
-        <br><br>
+    
 </table>
+
+<a href="index.php"><input type="button" value="voltar" class="btn"></a>
+<img src="imgs/Logo-cps.png" class="cps-logo">
+        
+</div>
+</div>
+<a href="https://github.com/Vicrisfell/Projeto_CRUD_DSW2"><img class="rodape-icons" src="imgs/github-icon.svg" lin></img></a>
+</div>
 
 </body>
 </html>

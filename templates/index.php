@@ -8,30 +8,39 @@
     <meta charset="UTF-8">
     <title>Portaria Fatec</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-    <style type="text/css">
-        body{ font: 14px sans-serif; text-align: center; }
-    </style>
+    <link rel="stylesheet" href="styles/estilo-Menu.css">
+    <link rel="shortcut icon" type="imagex/png" href="./imgs/Logo-cps.ico">
 </head>
 <body>
-    <div class="page-header">
-        <h1>
-            <?php echo $_SESSION["username"]; ?>
-            <br>
-        </h1>
-    </div>
-
-    
-    <p>
-        <a href="create.php"><input type="button" value=" Cadastros"></a>
-        <br><br>
-        <a href="read.php"><input type="button" value="Relatório de Cadastros"></a>
-        <br><br>
-        <a href="deletar.php"><input type="button" value="Deletar Cadastro"></a>
-        <br><br>
-        <a href="atualiza.php"><input type="button" value="Atualizar Cadastro"></a>
-        <br><br>
-        <a href="login.php"><input type="button" value="voltar"></a>
-        <br><br>
+    <div class="wrapper">
+        <div class="signup-box">
+         <div class="left-box">
+        <p>
+        <h2 class="left-box-text">Opções</h2>
+        <a href="create.php" type="button" class="btn">Cadastros<span> &#x270F;</span></a>
+        <a href="read.php" type="button" class="btn">Relatório<span> &#x2631;</span></a>
+        <a href="deletar.php" type="button" class="btn">Deletar Cadastro<span> &#x2715;</span></a>
+        <a href="atualiza.php" type="button" class="btn">Atualizar Cadastro<span> &#x270E;</span></a>
+        <a href="login.php" type="button" class="btn">Voltar<span>&#x261A;</span></a>
     </p>   
+         </div>
+<div class="right-box">
+
+<h4>● Para melhorar a organização.</h4>
+    <h1 class="welcome">Bem vindo ao sistema de estacionamento, <?php echo $_SESSION["username"]; ?>.</h1>
+
+    <h3 class="text1">Esse sistema foi feito com o intuito de, cadastrar e armazenar o nome dos alunos e a placa de seus respectivos veiculos.</h3>
+    <h3 class="text2">existe a possibilidade de adicionar, remover e editar os dados dos alunos cadastrados no estacionamento da faculdade. 
+        Além de ter uma visualização completa de todos os dados cadastrados</h3>
+    <div></div>
+           </div>
+           <img src="imgs/Logo-cps.png" class="cps-logo">
+        </div>
+
+
+    <a href="https://github.com/Vicrisfell/Projeto_CRUD_DSW2"><img class="rodape-icons" src="imgs/github-icon.svg" lin></img></a>
+      
+    
+    
 </body>
 </html>

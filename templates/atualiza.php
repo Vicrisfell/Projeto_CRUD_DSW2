@@ -5,28 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atualizar cadastro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/estilo-atualiza.css">
 </head>
-<div>
+
+<body>
+<div class="wrapper">
+<div class="content-box">
+<div class ="left-box">
+    <h1 class="page-title">Atualização de Cadastro</h1>
 <form action="atualiza.php" method="post">
-    <label for="aluno_atualizar">Novo Nome do Aluno:</label><br>
-    <input type="text" id="aluno_atualizar" name="aluno_atualizar" required><br><br>
+    <label class="form-text" for="aluno_atualizar" class="left-box-text">Novo Nome do Aluno:</label><br>
+    <input class="form-control" type="text" id="aluno_atualizar" name="aluno_atualizar" required><br><br>
     
-    <label for="veiculos_id">ID do Veículo a ser Atualizado:</label><br>
-    <input type="text" id="veiculos_id" name="veiculos_idr" required><br><br>
+    <label class="form-text" for="veiculos_id">ID do Veículo a ser Atualizado:</label><br>
+    <input class="form-control" type="text" id="veiculos_id" name="veiculos_idr" required><br><br>
 
-    <label for="id_atualizar">ID :</label><br>
-    <input type="text" id="id_atualizar" name="id_atualizar"><br>
+    <label class="form-text" for="id_atualizar">ID :</label><br>
+    <input class="form-control" type="text" id="id_atualizar" name="id_atualizar"><br>
 
-    <label for="placa">Placa:</label><br>
-    <input type="text" id="placa" name="placa"><br>
+    <label class="form-text" for="placa">Placa:</label><br>
+    <input class="form-control" type="text" id="placa" name="placa"><br>
 
-    <label for="data_hora_atualizar">Data e Hora:</label><br>
-    <input type="text" id="data_hora_atualizar" name="data_hora_atualizar"><br><br>
+    <label class="form-text" for="data_hora_atualizar">Data e Hora:</label><br>
+    <input class="form-control" type="text" id="data_hora_atualizar" name="data_hora_atualizar"><br><br>
    
-    <input type="submit" value="Atualizar Registro">
-    <a href="index.php" class="btn btn-primary">voltar</a>
+    <input class="btn" type="submit" value="Atualizar Registro">
+    <a href="index.php" class="btn ">voltar</a>
+    
 </form>
+<img src="imgs/Logo-cps.png" class="cps-logo">
 
+</div>
+
+</div>
+
+<a href="https://github.com/Vicrisfell/Projeto_CRUD_DSW2"><img class="rodape-icons" src="imgs/github-icon.svg" lin></img></a>
+
+</div>
 <?php
 
 require_once('../classes/DBConnectVeiculos.php');
@@ -62,7 +78,7 @@ unset($objetoVeiculos);
 unset($objeto1);
 
 ?>
- 
+
 </body>
 </html>
 
