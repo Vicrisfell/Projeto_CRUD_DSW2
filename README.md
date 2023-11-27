@@ -6,6 +6,7 @@ Vitor Cristiano Felizatti
 <br>Carla Cristina Justino Pereira da Silva
 <br>Fernando Augusto Saldanha
 <br>Vitor de Carvalho
+<br>Lucas Luiz Assis
 
 Este projeto consiste na implementação de um CRUD (Create, Read, Update, Delete) em PHP, orientado a objetos, para as tabelas de veículos e registros conforme os requisitos da Avaliação 2 do curso.
 
