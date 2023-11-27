@@ -18,7 +18,7 @@ class veiculos
         $result = mysqli_query($this->connect->getConnection(), $sql);
         // Verifica se o placa$placa já foi cadastrado
         if($result !== FALSE && $result->num_rows > 0) {
-            echo "placa já cadastrado";
+            echo "Placa já cadastrada";
         }
     }
     
@@ -57,7 +57,7 @@ class veiculos
                 echo "Dados Deletados com Sucesso";
 
             }else
-            echo "placa nao Encontrado!";
+            echo "Placa não encontrada!";
         }
     }
     
