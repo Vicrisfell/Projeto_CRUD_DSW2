@@ -1,7 +1,7 @@
 # Projeto de Avaliação 2 - Implementação de CRUD em PHP
 
 Integrantes:
-Giovani Ruzzon de Jesus Ortega <br>
+<br>Giovani Ruzzon de Jesus Ortega <br>
 Vitor Cristiano Felizatti 
 <br>Carla Cristina Justino Pereira da Silva
 <br>Fernando Augusto Saldanha
