@@ -1,20 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deletar cadastro</title>
+</head>
+<body>
+
 <?php
-require_once('../Classes/veiculos.php');
-// Verificando se a requisicao de dados acontece via metodo POST
-if ($_SERVER["REQUEST_METHOD"] == "POST"){
-// Instancia objeto veiculos para conectar ao banco de dados
-$veiculos = new veiculos($servername, $username, $password,$dbname);
+require_once('../classes/DBconnect.php');
+require_once('../classes/DBConnectVeiculos.php');
+$objetoVeiculos = new DBConnectVeiculos();
+$objeto1 = new DBConnect();
 
+// Verifique se o formulário foi enviado
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $id_deletar = isset($_POST['id_deletar']) ? $_POST['id_deletar'] : '';
 
-// Recebe cpf via POST
-$placa = $_POST['placa'];
-// Chama o metodo Deletar de veiculos
-$veiculos->delete($placa);
-// Destroi o objeto e encerra a conexao com o banco de dados
-unset($veiculos);
+    // Verifique se o ID não está vazio
+    if (!empty($id_deletar)) {
+        $objetoVeiculos->deletar_veiculo($id_deletar);
+    } else {
+        echo "ID do veículo não fornecido";
+    }
+}
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $id_deletar = isset($_POST['id_deletar']) ? $_POST['id_deletar'] : '';
 
-header('location:index.php');
-
+    // Verifique se o ID não está vazio
+    if (!empty($id_deletar)) {
+        $objeto1->deletar_registro($id_deletar);
+    } else {
+        echo "ID do veículo não fornecido";
+    }
 }
 
+unset($objetoVeiculos);
+unset($objeto1);
 ?>
+ 
+</body>
+</html>
+
+
+
