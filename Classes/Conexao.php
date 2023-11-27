@@ -1,29 +1,33 @@
-<?php
-require_once('dados.php');
-
+<?php 
 class Conexao {
-    private $conn;
+    protected $servername = "localhost";
+    protected $username = "root";
+    protected $password = "";
+    protected $dbname = "portaria";
+    protected $conn;
+    
+   
 
-    function __construct($servername, $username, $password,$dbname){
-        $this->conn = new mysqli($servername, $username, $password,$dbname);
-        $this->checarConexao();
-    }
-
-    public function checarConexao(){
-        if ($this->conn->connect_error) {
-            die("Connection failed: " . $this->conn->connect_error);
+    public function __construct() {
+        try {
+            $this->conn = new PDO("mysql:host=$this->servername;dbname=$this->dbname", $this->username, $this->password);
+            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch (PDOException $e) {
+            echo "<br>" . $e->getMessage();
         }
-        echo "Connected successfully";
     }
 
-    public function getConnection() {
+    public function __destruct() {
+        $this->fechar_conexao();
+        print "DESTRUÍDO: Objeto {$this->conn}\n";
+    }
+
+    protected function fechar_conexao() {
+        $this->conn = null;
+    }
+    public function getConexao() {
         return $this->conn;
-    }
-    public function closeConnection(){
-        $this->conn->close();
-    }
 }
-
-
-
+}
+  
 ?>
