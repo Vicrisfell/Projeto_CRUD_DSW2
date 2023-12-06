@@ -19,7 +19,6 @@ class Conexao {
 
     public function __destruct() {
         $this->fechar_conexao();
-        print "DESTRUÍDO: Objeto {$this->conn}\n";
     }
 
     protected function fechar_conexao() {

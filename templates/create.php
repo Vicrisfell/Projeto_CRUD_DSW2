@@ -5,32 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro aluno</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/estilo-cadastro.css">
+    <link rel="shortcut icon" type="imagex/png" href="./imgs/Logo-cps.ico">
+
 </head>
+
+
 <body>
-    <div>
-        <h1><strong>Cadastro de Usuário:</strong></h1>
-        <br><br>
-        <form action="create.php" method="post">
-            <label for="aluno">Aluno:</label>
-            <input type="text" id="aluno" name="aluno" required><br><br>
+    <div class="wrapper">
+        <div class="content-box">
+            <div class ="left-box">
+        <h1 class="left-box-text"><strong>Cadastro de Usuário:</strong></h1>
+        
+        <div class="box-content">
+        <form action="create.php" method="post" class="signup-form">
+            <label class="form-text" for="aluno">Aluno:</label>
+            <input type="text" class="form-control" id="aluno" name="aluno" required>
 
-            <label for="nome">Data/Hora:</label>
-            <input type="text" id="data_hora" name="data_hora" required><br><br>
+            <label class="form-text" for="data_hora">Data/Hora:</label>
+            <input type="text" class="form-control" id="data_hora" name="data_hora" required>
 
-            <label for="veiculos_id">ID do Veículo:</label>
-            <input type="text" id="veiculos_id" name="veiculos_id" required><br><br>
+            <label class="form-text" for="veiculos_id">ID do Veículo:</label>
+            <input type="text" class="form-control" id="veiculos_id" name="veiculos_id" required>
             
-            <label for="placa">placa do veiculo:</label>
-            <input type="text" id="placa" name="placa" required><br><br>
+            <label class="form-text" for="placa">placa do veiculo:</label>
+            <input type="text" class="form-control" id="placa" name="placa" required>
 
-            <label for="id">id do aluno:</label>
-            <input type="text" id="id" name="id" required><br><br>
-
-            <input type="submit" value="Cadastrar">
-            <br><br>
-            <a href="login.php"><input type="button" value="voltar"></a>
-            <br><br>
+            <label class="form-text" for="id">id do aluno:</label>
+            <input type="text" class="form-control" id="id" name="id" required>
+            
+            <div class="button-container">
+            <input type="submit" value="Cadastrar" class="btn">
+            
+            <a href="index.php"><input type="button" value="voltar" class="btn"></a>
+            
+            </div>
+            
         </form>
+        </div>
+        <img src="imgs/Logo-cps.png" class="cps-logo">
+    </div>
+    
+    
+    
+        </div>
+        <a href="https://github.com/Vicrisfell/Projeto_CRUD_DSW2"><img class="rodape-icons" src="imgs/github-icon.svg" lin></img></a>
     </div>
     
 </body>
