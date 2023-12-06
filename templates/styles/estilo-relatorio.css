@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #DDF2FD;
+}
+
+body{
+    background-image: url("../imgs/background4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #cccccc;
+    background-attachment: fixed;
+
+}
+
+.content-box{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 110vh;
+    max-width: 800px;
+    margin-top: 20px;
+    padding-bottom: 70px;
+    box-shadow:
+    0 -2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 -6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 -12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 24.4px rgba(0, 0, 0, 0.086),
+    0 100px 40px rgba(0, 0, 0, 0.12);
+}
+
+.cps-logo{
+    height: 50px;
+    max-height: 220px;
+    max-width: 180px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.left-box{
+    text-align: center;
+    position: relative;
+    padding: 20px 80px 80px;
+    margin: 30px;
+    background-color: eae5e8;
+    flex-basis: 50%;
+    border-radius: 20px;
+    flex-grow: 1;
+    max-width: 100%;
+    height: 100%;
+    box-shadow:
+    0 -2.0px 2.2px rgba(0, 0, 0, 0.034),
+    0 -3.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 -12.5px 10px rgba(0, 0, 0, 0.06),
+    0 20.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.left-box-text{
+    font-size: 1vw;
+    text-align: center;
+    margin: 0;
+    color: #b20000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.btn{
+    width: 100%;
+    border: 0;
+    background: #b20000;
+    outline: none;
+    color: #ffffff;
+    border-radius: 0;
+    font-size: 1vw;
+    cursor: pointer;
+    transition: background 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 3px 10px  black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover{
+    font-weight: bold;
+    background: #f4f6f7;
+    color: #080808;
+    text-transform: none;
+}
+
+
+
+.page-text{
+    color: #080808;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.rodape-icons{
+    padding: 20px;
+    
+    }
+    
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 40px;
+    box-shadow:
+    0 -2.0px 2.2px rgba(0, 0, 0, 0.034),
+    0 -3.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 -12.5px 10px rgba(0, 0, 0, 0.06),
+    0 20.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+th, td {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #b20000;
+    color: #ffffff;
+}
