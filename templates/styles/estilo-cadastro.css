@@ -50,8 +50,8 @@ body{
 }
 
 .content-box .cps-logo{
-    padding-right: 5px;
-    padding-top: 5px;
+    margin-right: 10px;
+    margin-top: 5px;
     height: 50px;
     max-height: 220px;
     max-width: 170px;
@@ -141,9 +141,11 @@ body{
     box-shadow: 2px 3px 10px  black;
     font-weight: bold;
     text-decoration: none;
+    text-transform: none;
 }
 
 .btn:hover{
+    text-transform: none;
     text-decoration: none;
     background: #f4f6f7;
     color: #080808;
@@ -166,6 +168,7 @@ body{
         top: auto;
         right: 0;
         bottom: 0;
+        height: 40px;
     }
 }
 

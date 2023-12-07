@@ -7,6 +7,7 @@
     <title>Atualizar cadastro</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <link rel="stylesheet" href="styles/estilo-atualiza.css">
+    <link rel="shortcut icon" type="imagex/png" href="./imgs/favicon.ico">
 </head>
 
 <body>
@@ -34,7 +35,7 @@
     <a href="index.php" class="btn ">voltar</a>
     
 </form>
-<img src="imgs/Logo-cps.png" class="cps-logo">
+<img src="imgs/Logo-cps2.png" class="cps-logo">
 
 </div>
 

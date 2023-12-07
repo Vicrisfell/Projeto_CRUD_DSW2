@@ -19,7 +19,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Acessar</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <link rel="stylesheet" href="styles/estilo-login.css">
-    <link rel="shortcut icon" type="imagex/png" href="./imgs/Logo-cps.ico">
+    <link rel="shortcut icon" type="imagex/png" href="./imgs/favicon.ico">
 </head>
 
 <body>
@@ -30,12 +30,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
          <p class="form-text">Favor inserir login e senha.</p>
          <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
             <div class="form-group">
-                <label class="form-text">Nome</label>
+                <label class="form-text">Nome:</label>
                 <input type="text" name="nome" class="form-control" value="fatec">
                 <span class="help-block"></span>
             </div>    
             <div class="form-group">
-                <label class="form-text">Senha</label>
+                <label class="form-text">Senha:</label>
                 <input type="password" name="senha" class="form-control" value="portaria">
                 <span class="help-block"></span>
             </div>
@@ -46,8 +46,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             <div class="right-box">
             <p class="right-box-text">Oferecido por: </p>
-            <img src="imgs/Logo-cps.png" class="cps-logo">
-            <img src="imgs/Logo-fatec-araras.png" class="fatec-logo">
+            <a href="https://www.cps.sp.gov.br/"><img src="imgs/Logo-cps2.png" class="cps-logo"></a>
+            <a href="https://fatecararas.cps.sp.gov.br/"><img src="imgs/Logo-fatec-araras.png" class="fatec-logo"></a>
             <h1 class="welcome">Faça seu login para usar o sistema.</h1>
         </div>
     </div>

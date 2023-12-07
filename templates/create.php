@@ -7,7 +7,7 @@
     <title>Cadastro aluno</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <link rel="stylesheet" href="styles/estilo-cadastro.css">
-    <link rel="shortcut icon" type="imagex/png" href="./imgs/Logo-cps.ico">
+    <link rel="shortcut icon" type="imagex/png" href="./imgs/favicon.ico">
 
 </head>
 
@@ -38,13 +38,13 @@
             <div class="button-container">
             <input type="submit" value="Cadastrar" class="btn">
             
-            <a href="index.php"><input type="button" value="voltar" class="btn"></a>
+            <a href="index.php"type="button" class="btn">Voltar</a>
             
             </div>
             
         </form>
         </div>
-        <img src="imgs/Logo-cps.png" class="cps-logo">
+        <img src="imgs/Logo-cps2.png" class="cps-logo">
     </div>
     
     

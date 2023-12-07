@@ -9,7 +9,7 @@
     <title>Portaria Fatec</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <link rel="stylesheet" href="styles/estilo-Menu.css">
-    <link rel="shortcut icon" type="imagex/png" href="./imgs/Logo-cps.ico">
+    <link rel="shortcut icon" type="imagex/png" href="./imgs/favicon.ico">
 </head>
 <body>
     <div class="wrapper">
@@ -34,7 +34,7 @@
         Além de ter uma visualização completa de todos os dados cadastrados</h3>
     <div></div>
            </div>
-           <img src="imgs/Logo-cps.png" class="cps-logo">
+           <img src="imgs/Logo-cps2.png" class="cps-logo">
         </div>
 
 

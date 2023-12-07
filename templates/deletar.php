@@ -7,7 +7,7 @@
     <title>Deletar cadastro</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <link rel="stylesheet" href="styles/estilo-deleta.css">
-    <link rel="shortcut icon" type="imagex/png" href="./imgs/Logo-cps.ico">
+    <link rel="shortcut icon" type="imagex/png" href="./imgs/favicon.ico">
 </head>
 <body>
 <div class="wrapper">
@@ -18,10 +18,10 @@
         <form action="delete.php" method="post">
         <label class="form-text" for="id">ID a ser deletado:</label>
         <input class="form-control" type="text" id="id_deletar" name="id_deletar">
-        <input class="btn" type="submit" value="Deletar">
-        <a href="index.php" class="btn">voltar</a>
+        <a class="btn" type="submit" class="btn">Deletar</a>
+        <a href="index.php" type="button" class="btn">Voltar</a>
     </form>
-    <img src="imgs/Logo-cps.png" class="cps-logo">
+    <img src="imgs/Logo-cps2.png" class="cps-logo">
     </div>
     
     </div>

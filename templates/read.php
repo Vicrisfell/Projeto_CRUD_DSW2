@@ -61,8 +61,8 @@ try {
     
 </table>
 
-<a href="index.php"><input type="button" value="voltar" class="btn"></a>
-<img src="imgs/Logo-cps.png" class="cps-logo">
+<a href="index.php"type="button" class="btn">Voltar</a>
+<img src="imgs/Logo-cps2.png" class="cps-logo">
         
 </div>
 </div>
